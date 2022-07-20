@@ -84,8 +84,8 @@ public class BackgroundGeolocationService extends Service {
                     BackgroundGeolocationService.this
             );
             LocationRequest locationRequest = new LocationRequest();
-            locationRequest.setMaxWaitTime(30000);
-            locationRequest.setInterval(30000);
+            locationRequest.setMaxWaitTime(10000);
+            locationRequest.setInterval(10000);
             locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
             locationRequest.setSmallestDisplacement(distanceFilter);
 
