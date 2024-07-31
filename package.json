@@ -1,6 +1,6 @@
 {
     "name": "@capacitor-community/background-geolocation",
-    "version": "1.2.15",
+    "version": "1.2.18",
     "description": "Receive geolocation updates even while the app is in the background.",
     "repository": {
         "type": "git",
@@ -23,9 +23,9 @@
         "definitions.d.ts"
     ],
     "devDependencies": {
-        "@capacitor/android": "^5.0.0",
-        "@capacitor/core": "^5.0.0",
-        "@capacitor/ios": "^5.0.0"
+        "@capacitor/android": "6.0.0-rc.0",
+        "@capacitor/core": "6.0.0-rc.0",
+        "@capacitor/ios": "6.0.0-rc.0"
     },
     "peerDependencies": {
         "@capacitor/core": ">=3.0.0"
