@@ -83,7 +83,7 @@ public class BackgroundGeolocationService extends Service {
             LocationRequest locationRequest = new LocationRequest();
             locationRequest.setMaxWaitTime(20000);
             locationRequest.setInterval(15000);
-            locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+            locationRequest.setPriority(LocationRequest.PRIORITY_BALANCED_POWER_ACCURACY);
             locationRequest.setSmallestDisplacement(distanceFilter);
 
             LocationCallback callback = new LocationCallback(){
