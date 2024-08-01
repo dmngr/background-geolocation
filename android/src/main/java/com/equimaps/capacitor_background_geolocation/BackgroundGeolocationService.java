@@ -80,11 +80,10 @@ public class BackgroundGeolocationService extends Service {
             FusedLocationProviderClient client = LocationServices.getFusedLocationProviderClient(
                     BackgroundGeolocationService.this
             );
-         
             LocationRequest locationRequest = new LocationRequest();
-            locationRequest.setMaxWaitTime(12000);
-            locationRequest.setInterval(10000);
-            locationRequest.setPriority(LocationRequest.PRIORITY_BALANCED_POWER_ACCURACY);
+            locationRequest.setMaxWaitTime(20000);
+            locationRequest.setInterval(15000);
+            locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
             locationRequest.setSmallestDisplacement(distanceFilter);
 
             LocationCallback callback = new LocationCallback(){
